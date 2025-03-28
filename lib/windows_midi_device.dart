@@ -20,7 +20,7 @@ class WindowsMidiDevice extends MidiDevice {
 
   int callbackAddress;
 
-  final _bufferSize = 4096;
+  final _bufferSize = 16000;
 
   Pointer<MIDIHDR> _midiInHeader = nullptr;
   Pointer<BYTE> _midiInBuffer = nullptr;
